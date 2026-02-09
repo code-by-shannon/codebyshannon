@@ -18,33 +18,61 @@
 <body>
 <!-- NAV BAR -->
 <header>
-    <div id="navbar">
-        <img id= 'profile-pic' src="imgs/profile_pic.png" alt="shannon.codes profile pic sitting in a dark room coding">
-        <ul>
-            <li><a href="#reflect">shannon.codes</a></li>
-            <li> <a href="#projects">projects</a></li>
-            <li> <a href="#form">contact</a></li>
-        </ul>
-    </div>
+  <nav id="navbar">
+    <a href="#welcome-section" class="nav-brand">shannon.codes</a>
+
+
+
+    <ul class="nav-links">
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#form">contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<!-- WELCOME SECTION -- SECTION 1 -->    
-    <section id="welcome-section">
-      <h1>shannon.codes</h1>
-      <h2 id="hero-action">Made-to-fit websites for 
-        <span class="line-break"> <span class="no-templates">your</span> style, </span>           
-        <span class="line-break"> <span class="no-templates">your</span> needs, </span>               
-        <span class="line-break"> <span class="no-templates">your</span> voice </span>          
-        <span class="no-templates">not some generic drag-and-drop template.</span>
-      </h2>
 
-    </section>
+
+<!-- WELCOME SECTION -- SECTION 1 -->    
+<section id="welcome-section">
+  <h1>Shannon Stumpf</h1>
+
+  <p class="hero-primary">
+    Web Developer focused on JavaScript, responsive design, and building
+    clean, reliable web applications.
+  </p>
+
+  <p class="hero-secondary">
+    I also design and build custom websites for small businesses and
+    creative projects when a tailored solution makes sense.
+  </p>
+
+  <div class="hero-actions">
+    <a href="#projects" class="hero-cta">View Projects</a>
+    <a href="#form" class="hero-cta secondary">Work With Me</a>
+  </div>
+</section>
+
  
     <hr>
 <!-- PROJECT SECTION -->    
 <main>     
-  <h2 id="project-h2">Stuff I Made While Learning To Make Stuff</h2> 
+  <h2 id="project-h2">Web Development Projects
+
+  </h2> 
 <section id="projects">
+
+<!-- Leaderboard App -->
+<article class="project-tile">
+  <figure>
+    <h2>Leaderboard App</h2>
+    <a class="my-projects" href="https://codebyshannon.com/projects/SCLR_v_2_0/index.php" target="_blank">
+      <img src="imgs/leaderboard.png" alt="racing track at dawn titled leaderboard app">
+    </a>
+    <figcaption>
+      <p>My first app!  It allows creating race seasons, choosing tracks, creating drivers and posting race results!</p>
+    </figcaption>
+  </figure>
+</article>
 
         <!-- ROLLIN RAMBLERS -->
 <article class="project-tile">
@@ -198,70 +226,82 @@
   <!-- REFLECTION SECTION -->
   <section class="reflection" id="reflect">
     <h3>Reflections:</h3>
-    <p>As I wrap up my web design class this semester, I’ve been reflecting on what’s made a difference in my progress. Three things stand out:</p>
-    <p>First, learning how to implement SEO properly. It’s not just about stuffing keywords—it's about making sure people (and search engines) can actually find and understand your site and rank it at the top of the search results.</p>
-    <p>The importance of media queries and how to structure your html to make different screen sizes comply with minimal reworking of code.</p>
-    <p>Finally, I’ve committed to treating web design like a real craft, producing a publishable project every week. The world of coding is large and it's very easy to get lost and drown in a sea of possibilities.  Being forced to narrow my focus and concentrate on webdesign has greatly improved my results.</p>
+    <p>As I continue to dive deeper into web development and focus on connecting the frontend with the backend, I’ve come to understand that building effective applications involves far more than designing pages that look good. Visual design matters, but so do user experience, data flow, and how information is tracked—from user input, through the database, and back to the interface.</p>
+
+    <p>I’ve learned that building reliable applications requires patience and depth. Clean systems take time to design, and maintainable code depends on understanding how the frontend, backend, and database work together as a cohesive whole. It’s challenging work, but seeing those pieces come together into something functional and usable is what makes the process rewarding.</p>
+    
+    <p>At this stage, I’m focused on writing clear, intentional code and solving real-world problems. My goal is to create modular applications that can grow over time—systems that are easy to extend and adapt without needing to be rebuilt from the ground up.</p>
+    
+    
   </section>
 
   <!-- CONTACT FORM -->
-    <form action="contact.php" method="POST" id="form">
-      <h2>Contact Me:</h2>
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder = 'Alexis Borgenstein' required>
-      </div>
-     
+<!-- CONTACT FORM -->
+<form action="contact.php" method="POST" id="form">
+  <h2>Contact</h2>
 
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="alexis@email.com" required>
-      </div>
-      
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Alexis Borgenstein"
+      required
+    >
+  </div>
 
-      <div class="form-group">
-        <label for="comment">Inquiries:</label>
-        <textarea id="comment" name="comment" rows="5" placeholder="got a question or need to start a conversation?  Type your message here and cick the button below!" required></textarea>
-      </div>
-      
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="alexis@email.com"
+      required
+    >
+  </div>
 
-      <button type="submit" id="submit">Let's Build Together</button>
-    </form>
+  <div class="form-group">
+    <label for="comment">Message</label>
+    <textarea
+      id="comment"
+      name="comment"
+      rows="5"
+      placeholder="Have a question or want to start a conversation? Type your message here."
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" id="submit">Send Message</button>
+</form>
+
 
 <!-- BIO SECTION -->
-  <!-- <section>
-      <div id="bio">
-        <h3>Resume:</h3>
-          <p class="bio-p">I'm a former chemist of over 20 years, ensuring your tap water didn’t kill you. Now I build websites—slightly less life-saving, but a lot more fun.</p>
-          <p class="bio-p">I’m finishing up a web design class because apparently, YouTube and chatGPT aren’t a “formal education”. </p>
-          <p class="bio-p">I’ve published real, working websites that don’t explode when clicked and actually function as expected -- some victories are hard earned. </p>
-          <p class="bio-p">JavaScript is starting to make sense to me although sometimes it still feels like trying to reason with a hostile raccoon. I also dabble in PHP and SQL, which I fully intend to master… eventually.</p>
-          <p class="bio-p">While I haven’t had any paying clients yet, I’ve done free work that I'm proud of. One of the projects on this page was done for my son, who is a handyman.  It looks nice and functions well enough to make sure customers can contact him directly through the site without him having to worry about truckloads of spam email inundating his inbox.</p>
-          <p class="bio-p">When I’m not coding, you can find me on stage playing music, behind the wheel chasing lap times at racing tracks in California, or meditating like a monk who just debugged a recursive function. I try to keep my life and my code balanced and clean.</p>
-          <p class="bio-p">Let’s make something cool. Or weird. Or useful. Or all three.</p>
-      </div>
-  </section> -->
 
-  <!-- BIO SECTION -->
 <section>
   <div id="bio">
     <h3>Resume:</h3>
 
     <ul class="resume-list">
-      <li><strong>Former Profession:</strong> I'm a former chemist of over 20 years, ensuring your tap water didn’t kill you. Now I build websites—slightly less life-saving, but a lot more fun.</li>
+      <li><strong>Background:</strong> Former analytical chemist with over 20 years of experience working in regulated laboratory environments. I bring a methodical, detail-oriented approach to building reliable web applications.</li>
+    
+      <li><strong>Current Focus:</strong> I have completed formal coursework in web design, programming fundamentals, and JavaScript, and am now focused on full-stack web development, building practical applications with maintainable codebases.</li>
 
-      <li><strong>Current Mission:</strong> I recently completed my web design class at Long Beach Community College because apparently, YouTube and chatGPT aren’t a “formal education”.   I'm eager to dive ever deeper into web development.</li>
-
-      <li><strong>Experience:</strong> I’ve published real, working websites that don’t explode when clicked and actually function as expected (you're looking at one!) -- some victories are hard earned.</li>
-
-      <li><strong>Technical Skills:</strong> JavaScript is starting to make sense to me although sometimes it still feels like trying to reason with a hostile raccoon. I also dabble in PHP and SQL, which I fully intend to master… eventually.</li>
-
-      <li><strong>Soft Skills:</strong> Tenacity. Problem-solving.</li>
-
-      <li><strong>My life away from the computer:</strong> When I’m not coding, you can find me on stage playing music, behind the wheel chasing lap times at racing tracks in California, or meditating like a monk who just debugged a recursive function. I try to keep my life and my code balanced and clean.</li>
+    
+      <li><strong>Experience:</strong> I have designed, developed, and deployed live websites and web applications that handle real user interactions, data persistence, and structured workflows.</li>
+    
+      <li><strong>Technical Skills:</strong> Proficient in HTML, CSS, and JavaScript, with hands-on experience using PHP and SQL to build database-driven applications.</li>
+    
+      <li><strong>Professional Strengths:</strong> Problem-solving, persistence, and the ability to break complex systems into manageable components.</li>
+    
+      <li><strong>Outside Interests:</strong> Outside of development, I perform music and participate in motorsports, experiences that reinforce discipline, creativity, and focus.</li>
     </ul>
-
-    <p class="bio-p">Let’s make something cool. Or weird. Or useful. Bonus points if it’s all three.</p>
+    
+    <p class="bio-p">
+      I’m interested in building applications that are clear, reliable, and designed to grow over time.
+    </p>
+    
   </div>
 </section>
 
@@ -274,19 +314,7 @@
       <p><a id='mail-tag' href="mailto:sestumpf@gmail.com">sestumpf@gmail.com</a>, Long Beach CA</p>
     </footer>
 
-    <div id="whyHireModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h3>Why Hire Me?</h3>
-        <ul>
-          <li><strong>Custom design with personality</strong></li>
-          <li><strong>Real deployment</strong> (domains, hosting, email)</li>
-          <li><strong>Forms, SEO, responsiveness</strong> — the works</li>
-          <li><strong>Craftsmanship</strong>, not cookie-cutter clones</li>
-        </ul>
-        <p>Let’s make something cool. Or weird. Or both.</p>
-      </div>
-    </div>
+    
 
     <script src="js.js"></script>
 </body>
