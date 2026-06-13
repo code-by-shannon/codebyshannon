@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shannon.codes | Web Designer & Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+<!-- Disable Cache -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 
     <!-- GOOGLE FONTS-->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
@@ -42,8 +46,7 @@
   <h1>Shannon Stumpf</h1>
 
   <p class="hero-primary">
-    Web Developer focused on JavaScript, responsive design, and building
-    clean, reliable web applications.
+    Web developer with experience building PHP, MySQL, JavaScript, and React applications. I enjoy creating practical websites, database-driven tools, and custom solutions for small businesses, bands, and local organizations.
   </p>
 
   <p class="hero-secondary">
@@ -66,6 +69,72 @@
   </h2> 
 <section id="projects">
 
+<!-- Band Websites Link-->
+<article class="project-tile">
+  <div class="carousel">
+
+    <div class="carousel-track" id="band-carousel">
+      <img src="imgs/ramblers.png" class="slide active">
+      <img src="imgs/crack.png" class="slide">
+      <img src="imgs/slingers.png" class="slide">
+    </div>
+  
+    <div class="carousel-buttons">
+      <button class="prev">←</button>
+      <button class="next">→</button>
+    </div>
+  
+  </div>
+    <figcaption>
+      <p>
+        Custom websites for bands and musicians. <b>Promote</b> upcoming shows,
+        <b>showcase</b> photos and videos, and give fans one place to find your
+        music, schedule, and contact information.
+      </p>
+      <br>
+      <p>
+        Visit <a href='https://www.localstageweb.com'>shannon codes bandwebsites</a> to see examples and learn more.
+      </p>
+    </figcaption>
+  </figure>
+</article>
+
+<!-- PHP Final-Project App -->
+<article class="project-tile">
+  <figure>
+    <h2>Role Based Login System with PHP</h2>
+    <a class="my-projects" href="https://www.localstageweb.com/final_project/homework/index.php" target="_blank">
+      <img src="imgs/role.png" alt="role based login system with PHP">
+    </a>
+    <figcaption>
+      <p>
+        A role-based login system built with PHP and MySQL. Users can securely log in
+        as administrators, employees, or customers, with each role having access to
+        different features and permissions. The system includes customer, product,
+        and order management functionality.
+      </p>
+    </figcaption>
+  </figure>
+</article>
+
+<!-- React Final Project -->
+<article class="project-tile">
+  <figure>
+    <h2>Store Mock Up with REACT</h2>
+    <a class="my-projects" href="https://app.netlify.com/projects/shannons-guitar-shop" target="_blank">
+      <img src="imgs/react.png" alt="store mock up with react">
+    </a>
+    <figcaption>
+        <p>
+          A React-based e-commerce application featuring product listings, dynamic
+          routing, and detailed product pages. Built using React components, state
+          management, hooks, and React Router to create a responsive single-page
+          application with a modern user experience.
+        </p>
+    </figcaption>
+  </figure>
+</article>
+
 <!-- Leaderboard App -->
 <article class="project-tile">
   <figure>
@@ -81,33 +150,14 @@
         results with automatic points calculation and standings.
       </p>
     </figcaption>
-    
-  </figure>
-</article>
-
-<!-- ROLLIN RAMBLERS -->
-<article class="project-tile">
-  <figure>
-    <h2>Rollin' Ramblers</h2>
-    <a class="my-projects" href="https://www.rollinramblers.com" target="_blank">
-      <img src="imgs/rambler.png" alt="Screenshot of Sparkly Telecaster and western embroidered shirt">
-    </a>
-    <figcaption>
-      <p>
-        Custom website built for a working band, focused on mobile-first
-        usability and cohesive visual identity. Designed to promote gigs,
-        integrate social media, and reinforce the band’s brand across devices.
-      </p>
-    </figcaption>
-    
-  </figure>
+    </figure>
 </article>
 
 <!-- Weather App -->
 <article class="project-tile">
   <figure>
     <h2>Weather App (API driven)</h2>
-    <a class="my-projects" href="https://www.codebyshannon/projects/weather_app" target="_blank">
+    <a class="my-projects" href="https://codebyshannon.com/projects/weather_app/index.html" target="_blank">
       <img src="imgs/weather_app.png" alt="screenshot of weather app">
     </a>
     <figcaption>
@@ -123,7 +173,7 @@
     
 
 <!-- HAWKPOINT HANDYMAN -->
-<article class="project-tile">
+<!-- <article class="project-tile">
   <figure>
     <h2>Hawkpoint Handyman</h2>
     <a class="my-projects" href="https://www.hphistl.com" target="_blank">
@@ -137,12 +187,11 @@
         domain email configuration.
       </p>
     </figcaption>
-    
-    
-</article>
+  </article>
+-->
 
 <!-- DEEP PURPLE -->
-<article class="project-tile">
+<!-- <article class="project-tile">
   <figure>
     <h2>Let's Go Space Truckin</h2>
     <a class="my-projects" href="https://www.letsgospacetruckin.com" target="_blank">
@@ -157,11 +206,8 @@
         with long-form readability.
       </p>
     </figcaption>
-
-
-    
-  </figure>
-</article>
+    </figure>
+</article> -->
 
 <!-- TECHNICAL DOCUMENT -->
 <article class="project-tile">
@@ -181,39 +227,14 @@
     
   </figure>
 </article>
-
-
-
-
-
-
-
-
-
-
-
 </section>
 </main>
 
      
 <hr>
-
 <!-- REFLECTIONS ** CONTACT ** RESUME-->
-<h2 id="bio-etc-h2">Who I Am. What I’ve Learned. How to Reach Me.</h2>  
-<section id="bio-contact-and-reflections">
-  <!-- REFLECTION SECTION -->
-  <section class="reflection" id="reflect">
-    <h3>Reflections:</h3>
-    <p>As I continue to dive deeper into web development and focus on connecting the frontend with the backend, I’ve come to understand that building effective applications involves far more than designing pages that look good. Visual design matters, but so do user experience, data flow, and how information is tracked—from user input, through the database, and back to the interface.</p>
 
-    <p>I’ve learned that building reliable applications requires patience and depth. Clean systems take time to design, and maintainable code depends on understanding how the frontend, backend, and database work together as a cohesive whole. It’s challenging work, but seeing those pieces come together into something functional and usable is what makes the process rewarding.</p>
-    
-    <p>At this stage, I’m focused on writing clear, intentional code and solving real-world problems. My goal is to create modular applications that can grow over time—systems that are easy to extend and adapt without needing to be rebuilt from the ground up.</p>
-    
-    
-  </section>
-
-  <!-- CONTACT FORM -->
+<div class="bio_contact">
 <!-- CONTACT FORM -->
 <form action="contact.php" method="POST" id="form">
   <h2>Contact</h2>
@@ -224,7 +245,7 @@
       type="text"
       id="name"
       name="name"
-      placeholder="Alexis Borgenstein"
+      placeholder="your name"
       required
     >
   </div>
@@ -235,7 +256,7 @@
       type="email"
       id="email"
       name="email"
-      placeholder="alexis@email.com"
+      placeholder="user@email.com"
       required
     >
   </div>
@@ -246,7 +267,7 @@
       id="comment"
       name="comment"
       rows="5"
-      placeholder="Have a question or want to start a conversation? Type your message here."
+      placeholder="Have a question?  Send me a message!"
       required
     ></textarea>
   </div>
@@ -256,7 +277,6 @@
 
 
 <!-- BIO SECTION -->
-
 <section>
   <div id="bio">
     <h3>Resume:</h3>
@@ -264,27 +284,23 @@
     <ul class="resume-list">
       <li><strong>Background:</strong> Former analytical chemist with over 20 years of experience working in regulated laboratory environments. I bring a methodical, detail-oriented approach to building reliable web applications.</li>
     
-      <li><strong>Current Focus:</strong> I have completed formal coursework in web design, programming fundamentals, and JavaScript, and am now focused on full-stack web development, building practical applications with maintainable codebases.</li>
+      <li><strong>Current Focus:</strong> I have completed formal coursework in web design, programming fundamentals, JavaScript, React and PHP and am now focused on full-stack web development, building practical applications with maintainable codebases.</li>
 
     
       <li><strong>Experience:</strong> I have designed, developed, and deployed live websites and web applications that handle real user interactions, data persistence, and structured workflows.</li>
     
-      <li><strong>Technical Skills:</strong> Proficient in HTML, CSS, and JavaScript, with hands-on experience using PHP and SQL to build database-driven applications.</li>
+      <li><strong>Technical Skills:</strong> Proficient in HTML, CSS, and JavaScript and React, with hands-on experience using PHP and SQL to build database-driven applications.</li>
     
       <li><strong>Professional Strengths:</strong> Problem-solving, persistence, and the ability to break complex systems into manageable components.</li>
-    
-      <li><strong>Outside Interests:</strong> Outside of development, I perform music and participate in motorsports, experiences that reinforce discipline, creativity, and focus.</li>
-    </ul>
+  </ul>
     
     <p class="bio-p">
       I’m interested in building applications that are clear, reliable, and designed to grow over time.
     </p>
-    
   </div>
 </section>
-
-
-</section>
+</div>
+</div>
 
     
     <hr>
@@ -294,6 +310,6 @@
 
     
 
-    <script src="js.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
